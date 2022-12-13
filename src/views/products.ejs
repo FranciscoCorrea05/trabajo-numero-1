@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"> 
+	<link type="text/css" rel="stylesheet" href="css/style.css"> 
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css"> 
+	<title>bgmdieselrepuestos</title>
+</head>
+<body class="text-md-start">
+	<div class="container bg-info text-dark p-3-md">
+	<div class="container-md ">
+		  <header class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom-">
+			<a href="/" class="container d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			  <span class="fs-4 ">BGM Diesel</span>
+			</a>
+	  
+			<ul class="nav nav-pills-md ">
+			  <li class="nav-item-md"><a href="/main" class="nav-link active" aria-current="page">inicio</a></li>
+			  <li class="nav-item-md"><a href="/productos" class="nav-link">Productos</a></li>
+			  <li class="nav-item-md"><a href="#" class="nav-link">Servicios</a></li>
+			  <li class="nav-item-md"><a href="/users" class="nav-link">crear producto</a></li>
+			  <li class="nav-item-md"><a href="#" class="nav-link">Contacto</a></li>
+			</ul>
+		  </header>
+		</div>
+		<div class="container-md"><hr></div>
+
+		<section class="container-md">
+        <div class="d-flex justify-content-center"><h1>listado de productos!</h1></div>
+
+		<div class="d-flex justify-content-center"><ul>
+<% productos.forEach(producto => { %>
+ <li><%= producto.name %> -$ <%= producto.price %>  </li>
+<% }) %>
+
+		</ul></div>
+	</section>
+	
+	<footer class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom-md">
+		<a href="/" class="d-flex align-items-center mb text-decoration-none-md text-">
+		  </a>
+
+	  <ul class="nav nav-pills-md">
+		<li class="nav-item-md"><a href="/main" class="nav-link active" aria-current="page">inicio</a></li>
+		<li class="nav-item-md"><a href="/productos" class="nav-link">Productos</a></li>
+		<li class="nav-item-md"><a href="#" class="nav-link">Servicios</a></li>
+		<li class="nav-item-md"><a href="/users" class="nav-link">crear producto</a></li>
+		<li class="nav-item-md"><a href="#" class="nav-link">Contacto</a></li>
+	  </ul>
+	</footer>

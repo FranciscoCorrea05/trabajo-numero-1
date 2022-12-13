@@ -1,0 +1,42 @@
+[
+{
+    "id": "producto-1",
+    "name": "tetera",
+    "brand": "hola",
+    "price": "100", 
+    "descripction": "tetera magica",
+    "images": "excursion.png"
+},
+{
+    "id": "producto-2",
+    "name": "vaso",
+    "brand": "hola",
+    "price": "100", 
+    "descripction": "vaso magico",
+    "images": "excursion.png"
+},
+{
+    "id": "producto-3",
+    "name": "cuchillo",
+    "brand": "hola",
+    "price": "100", 
+    "descripction": "cuchillo magico",
+    "images": "excursion.png"
+},
+{
+    "id": "producto-4",
+    "name": "cuchara",
+    "brand": "hola",
+    "price": "100", 
+    "descripction": "cuchara magica",
+    "images": "excursion.png"
+},
+{
+    "id": "producto-5",
+    "name": "taza",
+    "brand": "hola",
+    "price": "100", 
+    "descripction": "taza magica",
+    "images": "excursion.png"
+}
+]
