@@ -5,7 +5,9 @@ const productsController = require("../controllers/productsControllers");
 
 router.get("/" , productsController.list);
 
-router.get( "/:nombre" , productsController.detail);
+router.get("/crear" , productsController.form);
+
+router.get( "/crear/:nombre" , productsController.detail);
 
 
 
