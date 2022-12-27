@@ -31,9 +31,9 @@
 
 <div class="container-md"><hr></div>
 
-<form>
+<form method="post" action="/productos/crear">
     <div class="container-md ">
-    <fieldset disabled>
+    <fieldset enabled>
       <legend>alta, baja y modificacion de producto</legend>
       <div class="mb-3">
         <label for="disabledSelect" class="form-label">elegir opcion</label>
@@ -42,23 +42,27 @@
         </select>
       </div>
       <div class="mb-3">
-        <label for="disabledTextInput" class="form-label">nombre del producto</label>
-        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        <label  class="form-label">nombre del producto</label>
+        <input type="text"  placeholder="text"  class="form-control" >
       </div>
       <div class="mb-3">
-        <label for="disabledTextInput" class="form-label">precio del producto</label>
-        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        <label  class="form-label">precio del producto</label>
+        <input type="text"  placeholder="text"   class="form-control" >
       </div>
       <div class="mb-3">
-        <label for="disabledTextInput" class="form-label">informacion del producto</label>
-        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        <label  class="form-label">informacion del producto</label>
+        <input type="text" placeholder="text" class="form-control" >
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">imagen del producto</label>
+        <input type="text" placeholder="text" class="form-control" >
       </div>
       <button type="submit" class="btn btn-primary">confirmar</button>
     </fieldset>
   </form>
 </div>
 
-<li class="nav-item-md"><a href="/productos/crear/:nombre" class="nav-link active" aria-current="page">buscar productos</a></li>
+
 
 <footer class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom-md">
     <a href="/" class="d-flex align-items-center mb text-decoration-none-md text-">

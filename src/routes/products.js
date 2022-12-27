@@ -7,7 +7,7 @@ router.get("/" , productsController.list);
 
 router.get("/crear" , productsController.form);
 
-router.get( "/crear/:nombre" , productsController.detail);
+router.get( "/:id" , productsController.detail);
 
 
 

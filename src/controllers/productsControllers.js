@@ -8,14 +8,18 @@ const productsController = {
     list: (req, res)=>{
         res.render ("products",{productos: myProducts})
     },
-  
-       form: (req, res)=>{
-        res.render("form")
-    },
 
     detail: (req, res)=>{
-        res.send ("producto con nombre:" + req.params.nombre);
-     },
+        myProducts.forEach(product => {
+            if (product.id == req.params.id) {
+                res.render("detail", {producto: product});
+            }
+        });
+        },
+
+       form: (req, res)=>{
+        res.render("form")
+    }
      
 }
 
