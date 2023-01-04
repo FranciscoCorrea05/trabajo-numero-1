@@ -29,7 +29,7 @@
 
 		<% productos.forEach(producto => { %>
 		<div class="card" style="width: 18rem;">
-			<img src="/images/excursion.png" class="card-img-top" alt="...">
+			<img src="/images/<%= producto.image %>" class="card-img-top" name="productImage" alt="...">
 			<div class="card-body">
 			  <h5 class="card-title"><%= producto.name %> </h5>
 			  <p class="card-text"><%= producto.price %> </p>

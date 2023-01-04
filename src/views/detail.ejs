@@ -30,7 +30,7 @@
         <div class="d-flex justify-content-center"><h1>tu producto!</h1></div>
  
 			<div class="card" style="width: 18rem;">
-				<img src="/images/excursion.png" class="card-img-top" alt="...">
+				<img src="/images/<%= producto.image %>" class="card-img-top" alt="...">
 				<div class="card-body">
 				  <h5 class="card-title"><%= producto.name %> </h5>
 				  <p class="card-text"><%= producto.price %> </p>
@@ -40,6 +40,7 @@
 			  <li class="nav-item-md"><a href="/main" class="nav-link active" aria-current="page">volver</a></li>
 	
 	</section>
+</body>
 	
 	<footer class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom-md">
 		<a href="/" class="d-flex align-items-center mb text-decoration-none-md text-">
@@ -53,3 +54,4 @@
 		<li class="nav-item-md"><a href="#" class="nav-link">Contacto</a></li>
 	  </ul>
 	</footer>
+	</html>
