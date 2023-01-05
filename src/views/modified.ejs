@@ -31,7 +31,7 @@
 
 <div class="container-md"><hr></div>
 
-<form method="post" action="/productos/modified" enctype="multipart/form-data">
+<form method="post" action="/productos/modified/<%= producto.id %>" enctype="multipart/form-data">
     <div class="container-md ">
     <fieldset enabled>
       <legend>alta, baja y modificacion de producto</legend>
@@ -43,32 +43,29 @@
       </div>
       <div class="mb-3">
         <label  class="form-label">nombre del producto</label>
-        <input type="text"  placeholder="text"  name="name" class="form-control" >
+        <input type="text"  placeholder="text"  name="name" class="form-control" value=" <%= producto.name %> ">
       </div>
       <div class="mb-3">
         <label  class="form-label">marca del producto</label>
-        <input type="text"  placeholder="text"  name="brand" class="form-control" >
+        <input type="text"  placeholder="text"  name="brand" value="<%= producto.brand %>" class="form-control" >
       </div>
       <div class="mb-3">
         <label  class="form-label">precio del producto</label>
-        <input type="text"  placeholder="text"  name="price"  class="form-control" >
+        <input type="text"  placeholder="text"  name="price" value="<%= producto.price %>"  class="form-control" >
       </div>
       <div class="mb-3">
         <label  class="form-label">descripcion del producto</label>
-        <input type="text" placeholder="text"  name="descripction" class="form-control" >
+        <input type="text" placeholder="text"  name="descripction" value="<%= producto.descripction %>" class="form-control" >
       </div>
       <div class="mb-3">
         <label  class="form-label">imagen del producto</label>
-        <input type="file" id="productImage" name="productImage"  class="form-control" >
+        <input type="file" id="productImage" name="productImage" value="<%= producto.image %>" class="form-control" >
       </div>
       <button type="submit" class="btn btn-primary">confirmar</button>
     </fieldset>
   </form>
 </div>
-<ul class="nav nav-pills-md">
-  <li class="nav-item-md"><a href="/productos/modified/:id" class="nav-link">modificar producto</a></li>
-  <li class="nav-item-md"><a href="/productos/delete/:id" class="nav-link">eliminar producto</a></li>
-</ul>
+
 
 </body>
 

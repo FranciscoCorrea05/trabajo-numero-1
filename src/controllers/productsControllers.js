@@ -32,11 +32,13 @@ const productsController = {
         return res.redirect("/productos");
     },
 
-      modified: (req, res)=>{
-        res.render("modified");
+      modified: async (req, res)=>{
+        const product = await Product.findById(req.params.id);
+        res.render("modified" , {producto: product});
     },
       smodified: async (req,res)=>{
-       await Product.findByIdAndUpdate({_id:req.params.id}, {
+        await Product.findByIdAndUpdate({_id:req.params.id}, 
+      {
         name: req.body.name,
         price: req.body.price,
         brand: req.body.brand,
@@ -45,11 +47,12 @@ const productsController = {
         return res.redirect("/productos");
     },
     
-      delete: (req, res)=>{
-      res.render("delete");
+      delete: async (req, res)=>{
+      const product = await Product.findById(req.params.id);
+      res.render("delete" , {producto: product});
     },
       sdelete: async (req,res)=>{
-       await Product.findOneAndDelete({_id:req.params.id}, {...req.body, image: req.file.filename});
+       await Product.findOneAndDelete({_id:req.params.id});
         return res.redirect("/productos");
     }
  };

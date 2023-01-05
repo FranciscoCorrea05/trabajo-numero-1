@@ -37,10 +37,16 @@
 				  <a href="/productos/<%= producto.id %>" class="nav-link active btn btn-primary">Go somewhere</a>
 				</div>
 			  </div>
+			  <div  class="container-md">
 			  <li class="nav-item-md"><a href="/main" class="nav-link active" aria-current="page">volver</a></li>
+			  <a href="/productos/modified/<%= producto.id %>" class="nav-link active btn btn-primary">modificar</a>
+			  <a href="/productos/delete/<%= producto.id %>" class="nav-link active btn btn-primary">borrar producto</a>
+			</div>
+			</div>
 	
 	</section>
 </body>
+
 	
 	<footer class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom-md">
 		<a href="/" class="d-flex align-items-center mb text-decoration-none-md text-">
